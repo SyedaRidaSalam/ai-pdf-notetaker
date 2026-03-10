@@ -16,7 +16,7 @@ export const ingest = action({
     fileId: v.string(),           // Unique file ID
   },
   handler: async (ctx, args) => {
-    const apiKey = ctx.env?.GOOGLE_GENAI_API_KEY || "AIzaSyCjcKulx3HfpHK3e_2mO6FpkmduO1YLT0k";
+    const apiKey = ctx.env?.GOOGLE_API_KEY || "AIzaSyCjcKulx3HfpHK3e_2mO6FpkmduO1YLT0k";
 
     // 1️⃣ Get PDF from Convex storage
     const file = await ctx.storage.get(args.storageId);
@@ -93,7 +93,7 @@ export const search = action({
     fileId: v.string(),
   },
    handler: async (ctx, args) => {
-    const apiKey = ctx.env?.GOOGLE_GENAI_API_KEY || "AIzaSyCjcKulx3HfpHK3e_2mO6FpkmduO1YLT0k";
+    const apiKey = ctx.env?.GOOGLE_API_KEY || "AIzaSyCjcKulx3HfpHK3e_2mO6FpkmduO1YLT0k";
 
     const vectorStore = new ConvexVectorStore(
       new GoogleGenerativeAIEmbeddings({
