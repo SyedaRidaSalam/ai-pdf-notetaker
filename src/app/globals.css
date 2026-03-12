@@ -61,7 +61,11 @@
 .buttonHover:hover {
   transform: translateY(-3px) scale(1.05);
 }
-
+@media only screen and (max-width: 768px) {
+  .ProseMirror {
+    padding: 0px 18px 20px 18px !important; /* smaller padding for mobile */
+  }
+}
 
 /* Basic editor styles */
 .tiptap {

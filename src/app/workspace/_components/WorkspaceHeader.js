@@ -37,7 +37,7 @@ function WorkspaceHeader({ filename, onSave }) {
       {/* Mobile filename */}
       {filename && (
         <div className="sm:hidden px-4 py-2 text-gray-600 truncate">
-          📄 {filename}.pdf
+          <label>📄File Name:</label> {filename}.pdf
         </div>
       )}
     </>
