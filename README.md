@@ -136,7 +136,7 @@ Before running the application, ensure you have:
 Clone the repository:
 
 ```bash
-git clone https://github.com/syedaridasalam/ai-pdf-note-taker.git
+git clone https://github.com/SyedaRidaSalam/ai-pdf-note-taker.git
 ```
 
 Navigate to the project directory:
